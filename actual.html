@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="ruben novillo diaz">
+    <meta name="description" content="">
+    <meta name="keywords" content="Egypt, Egipto, Nilo">
+    <meta name="generator" content="visual estudio code">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Antiguo Egipto</title>
+</head>
+
+<body>
+
+    <header class="header actual_header">
+        <h1>
+            El Antiguo Egipto
+        </h1>
+        <p class="subti">Mucho más que una nación</p>
+        <nav class="main_nav">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./etapas.html">Etapas</a>
+                    <ul>
+                        <li><a href="./etapas.html#antiguo">Imperio Antiguo</a> </li>
+                        <li><a href="./etapas.html#medio">Imperio Medio</a></li>
+                        <li><a href="./etapas.html#nuevo">Imperio Nuevo</a></li>
+                        <li><a href="./etapas.html#tardia">Época Tardía</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./mitologia.html">Mitología</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main id="actual" class="main_inicio">
+        <div class="formulario">
+        <h2 class="cab-form">Apúntate y comenta</h2>
+        <p>Formulario</p>
+        <form  class="contact_form" action="#" id="contact_form" runat="server">
+            <div>
+                <ul>
+                    <li>
+                        <h2>Contacto</h2>
+                    </li>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" placeholder="Pepito Perez" required />
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Pepito@ejemplo.com" required />
+                       
+                    </li>
+                    <li>
+                        <label for="website">Sitio web:</label>
+                        <input type="url" name="website" placeholder="http://www.developerji.com" required pattern="(http|https)://.+" />
+                        
+                    </li>
+                    <li>
+                        <label for="message">Comentario:</label>
+                        <textarea name="message" cols="40" rows="6" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
+    </main>
+
+</body>
+
+</html>

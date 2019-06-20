@@ -1,0 +1,664 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*******************************
+        
+            FIN RESETCSS
+
+*******************************/
+@font-face{
+    font-family: 'antiqua';
+    src: url(../assest/fonts/Chantelli_Antiqua.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'anticsans';
+    src: url(../assest/fonts/AnticSans-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'elmissiri';
+    src: url(../assest/fonts/elmessiri-regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'aaargh';
+    src: url(../assest/fonts/Aaargh.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+/*******************************
+        
+            FIN Fonts
+
+*******************************/
+
+
+
+body{
+    background-color: rgb(59, 83, 109);
+    
+}
+/*******************************
+        
+            Headers backs
+
+*******************************/
+.header{
+    min-height: 60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-bottom:solid 3px;
+    
+}
+
+.main_header{
+    background-image: url(../assest/tutan.jpg);
+    
+}
+.etapas_header{
+    background-image: url(../assest/esfinge.jpg);
+    
+}
+
+.mitologia_header{
+    background-image: url(../assest/mit.jpg);
+   
+}
+.actual_header{
+    background-image: url(../assest/ElCairo_11.jpg);
+      
+}
+h1{
+font-family:'antiqua';
+font-size: 3rem;
+font-variant: small-caps;
+padding-top: 2rem;
+display:flex;
+}
+
+
+.etapas_header h1{
+    font-family:'antiqua';
+    font-size: 3rem;
+    font-variant: small-caps;
+    padding-top: 2rem;
+    display:flex;
+    color:gold;
+    }
+
+    .actual_header h1{
+    font-family:'antiqua';
+    font-size: 3rem;
+    font-variant: small-caps;
+    padding-top: 2rem;
+    display:flex;
+    color:rgb(255, 255, 255); 
+    }
+
+.subti{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'elmissiri';
+    font-size: 1.2rem;
+    display:flex;
+}
+
+.etapas_header .subti{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'elmissiri';
+    font-size: 1.2rem;
+    display:flex;
+    color:gold;
+}
+.actual_header .subti{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'elmissiri';
+    font-size: 1.2rem;
+    display:flex;
+    color: rgb(255, 255, 255);
+}
+/*******************************
+        
+            Nav común
+
+*******************************/
+
+
+.main_nav li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:black;
+    text-decoration:none;
+    padding:10px 17px;
+    display:block;
+   
+      
+}
+
+
+.main_nav li a:hover {
+    background-color:#434343;
+    
+}
+
+.main_nav li ul {
+    display:none;
+    position:absolute;
+    
+}
+
+
+
+.main_nav li ul li {
+    position:relative;
+}
+/*******************************
+        
+           Footer común
+
+*******************************/
+.main_footer{
+    background-color: #000;
+    color: bisque;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+/*******************************
+        
+            -<main>-
+
+*******************************/
+
+
+div .aside{
+    font-family: 'elmissiri';
+    padding:1rem;
+    display: block;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-size:1rem;
+    flex:right;
+    margin-right: auto;
+    margin-left: auto
+
+        
+}
+div .aside h2{ 
+    font-size:1.5rem;
+    font-family: "antiqua";
+    padding-top: 2rem;
+    padding-bottom:6rem;
+}
+div .aside li{
+    padding:1rem;
+
+}
+section.aside1{
+    display:none;
+}
+
+section.aside2{
+    background-image: url(../assest/papiro.jpg);
+    color:rgb(49, 0, 0);
+}
+
+
+.artic_inicio{
+   padding: 0.5rem;
+   background-color: rgb(255, 245, 213);
+   margin-right: auto;
+   margin-left: auto
+}
+
+.artic_inicio header{
+font-family: 'aaargh';
+font-size: 2rem;
+font-weight: bold;
+margin-top: 4rem;
+margin-bottom: 3rem;
+
+}
+
+.artic_inicio h3{
+font-family: 'aaargh';
+font-size: 1.2rem;
+font-weight: bold;
+margin-top: 2rem;
+margin-bottom: 1.5rem;
+text-decoration: underline
+}
+
+.artic_inicio p{
+    font-family: 'anticsans';
+    line-height:1.3rem;
+    padding: 0.5rem;
+}
+.artic_inicio .main_table{
+    text-align: center;
+}
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    10% { left: 0%; }
+    11% { left: -100%; }
+    20% { left: -100%; }
+    21% { left: -200%; }
+    30% { left: -200%; }
+    31% { left: -300%; }
+    40% { left: -300%; }
+    41% { left: -400%; }
+    50% { left: -400%; }
+    51% { left: -500%; }
+    60% { left: -500%; }
+    61% { left: -600%; }
+    70% { left: -600%; }
+    71% { left: -700%; }
+    80% { left: -700%; }
+    81% { left: -800%; }
+    90% { left: -800%; }
+    91% { left: -900%; }
+    100% { left: -900%; }
+    }
+    figcaption a,
+    figcaption{
+        display:inline;
+        text-decoration:none;
+        font-family: 'antiqua';
+        font-size: 0.6rem;
+        background-color: #434343;
+        color:pink;
+        font-variant: small-caps;
+        
+    }
+    
+    
+   .slider{
+       margin-top:1rem;
+       margin-bottom:1rem;
+   }
+    div.slider { overflow: hidden; }
+    div.slider figure img { 
+        width: 10%; 
+        float: left; 
+    }
+    div.slider figure { 
+      position: relative;
+      width: 1000%;
+      animation: 60s slidy infinite; 
+    }
+
+    img.imagen{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    img.img_anuncio{
+        display:block;
+        width: 40%;
+          
+    }
+    
+
+    .videos{
+        margin-top:1rem;
+        border-top:4px solid brown;
+        border-bottom:4px solid brown; 
+        width:100%;
+    }
+    .main_table{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px rgb(71, 32, 1) solid;
+        
+
+}
+
+    .main_table tr th{
+        background:rgb(71, 32, 1);
+        color:rgb(255, 230, 162);
+        vertical-align: middle;
+        padding: 1rem 0;
+        font-size: 0.5rem;
+}
+
+    .main_table tr td{
+        background:rgb(255, 230, 162);
+        color:rgb(71, 32, 1);
+        font-size: 0.5rem;
+        padding: 1rem 0.5rem;
+        border: solid, 1px, white;
+        vertical-align: middle;
+}
+
+.wrapper .grid{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+	grid-template-columns: repeat(4);
+    grid-template-rows: repeat(19);
+}
+
+.wrapper .grid-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    border-top:white double 4px;
+    border-bottom:white double 4px;
+    color:rgb(7, 0, 112);
+    border-radius:20px;
+    
+}
+.wrapper .grid-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(255, 248, 209);
+    border-right:4px rgb(255, 255, 255) double;
+    grid-column: 2;
+    max-width: 200px;
+    
+}
+.wrapper{
+	display:flex;
+	min-height: 100%;
+}
+
+.wrapper .item1 {
+    grid-column:  1/span 4;
+    background-image: url(../assest/narmer.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+    
+
+}
+
+.wrapper .item3 {
+    grid-column:  1/span 4;
+    background-image: url(../assest/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+}
+
+.wrapper .item5 {
+    grid-column:  1/span 4;
+    background-image: url(../assest/slide2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+}
+
+
+.wrapper .item7 {
+    grid-column:  1/span 4
+}
+
+.wrapper .item9 {
+    grid-column:  1/span 4
+}
+
+.wrapper .item11 {
+    grid-column:  1/span 4
+}
+
+.wrapper .item13 {
+    grid-column:  1/span 4
+}
+.wrapper .item15 {
+    grid-column:  1/span 4
+}
+/*******************************************
+                
+               Formulario
+
+    **************************************/
+    .formulario{
+
+    }
+    #actual .cab-form{
+        font-family: 'anticsans'; 
+        font-size: 1.8rem;
+        padding:2rem;
+        color:white;
+    }
+    #actual p{
+        font-family: 'anticsans'; 
+        color:white;
+        padding:1rem;
+    }
+      
+    .contact_form h2, .contact_form label {
+        font-family: 'anticsans';
+        color:rgb(205, 182, 50);
+    }
+    
+    .contact_form ul {
+        width: 100%;
+        list-style-type: none;
+        list-style-position: outside;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .contact_form li {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+    
+        .contact_form li:first-child, .contact_form li:last-child {
+            border-bottom: 1px solid #777;
+        }
+    
+    .contact_form h2 {
+        margin: 0;
+        display: inline;
+    }
+    
+    .required_notification {
+        color: #d45252;
+        margin: 5px 0 0 0;
+        display: inline;
+        float: right;
+    }
+    
+    .contact_form label {
+        width: 150px;
+        margin-top: 3px;
+        display: inline-block;
+        float: left;
+        padding: 3px;
+    }
+    
+    .contact_form input {
+        height: 1.8rem;
+        width: 18rem;
+        padding: 5px 8px;
+    }
+    
+    .contact_form textarea {
+        padding: 8px;
+        width: 18rem;
+    }
+    
+    .contact_form button {
+        margin-left: 156px;
+    }
+    
+    .contact_form input, .contact_form textarea {
+        border: 1px solid #aaa;
+        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+        border-radius: 2px;
+        padding-right: 30px;
+        transition: padding .25s;
+    }
+    
+        .contact_form input:focus, .contact_form textarea:focus {
+            background: #fff;
+            border: 1px solid #555;
+            box-shadow: 0 0 3px #aaa;
+            padding-right: 70px;
+        }
+    
+    
+    button.submit {
+        background-color: #68b12f;
+        background: linear-gradient(top, #68b12f, #50911e);
+        border: 1px solid #509111;
+        border-bottom: 1px solid #5b992b;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+        text-shadow: 0 -1px 0 #396715;
+    }
+    
+        button.submit:hover {
+            cursor: pointer;
+        }
+
+/*******************************************
+                
+                MediaQuery
+
+    **************************************/
+   
+       
+    @media (min-width: 1200px) {
+        .screen{
+            display:flex;
+            margin-left:5%;
+            margin-right:5%;
+            
+        }
+        .screen2{
+            display:flex;
+            margin-left:5%;
+            margin-right:5%;
+            
+        }
+        .artic_inicio{
+            width:60%; 
+            padding: 2rem;
+    }
+    div .aside{
+        width:25%;
+    }
+    section.aside1{
+        display:initial;
+    }
+    .main_table{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px rgb(71, 32, 1) solid;
+        
+
+}
+
+    .main_table tr th{
+        background:rgb(71, 32, 1);
+        color:rgb(255, 230, 162);
+        font-size: 1rem;
+        vertical-align: middle;
+        padding: 1rem;
+}
+
+    .main_table tr td{
+        background:rgb(255, 230, 162);
+        color:rgb(71, 32, 1);
+        font-size: 1rem;
+        padding: 1rem;
+        border: solid, 1px, white;
+        vertical-align: middle;
+}
+    .main_nav li:hover > ul {
+    display:block;
+}  
+    .main_nav >ul > li {
+    float:left;
+
+} 
+    .main_nav li a {
+    background-color:#000;
+    color:#fff;
+    font-family:'antiqua';
+}
+.main_header{
+    background-image: url(../assest/banner.jpg);
+    
+}
+.etapas_header{
+    background-image: url(../assest/43-banner-painting-v2.jpg);
+    
+}
+
+.mitologia_header{
+    background-image: url(../assest/mitologia.jpg);
+   
+}
+.actual_header{
+    background-image: url(../assest/actual.jpg);
+      
+}
+}
+
+   
+    
