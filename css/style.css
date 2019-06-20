@@ -257,6 +257,22 @@ section.aside2{
    margin-right: auto;
    margin-left: auto
 }
+img.float_left{
+    float:left;
+    margin: 2rem 2rem 2rem 0; 
+}
+img.float_right{
+    float:right;
+    margin: 2rem 0 3rem 2rem; 
+}
+.clearfix {
+    overflow: auto;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .artic_inicio header{
 font-family: 'aaargh';
